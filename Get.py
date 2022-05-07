@@ -26,6 +26,6 @@ print(response.json())
 print(response.status_code)
 
 if (response.status_code == 204):
-   print("Successfully deleted interface")
+   print("Successfully Get interface")
 else:
-   print("Issue with deleting interface")
+   print("Issue with Get interface")
