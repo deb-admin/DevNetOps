@@ -21,8 +21,8 @@ module = "Cisco-IOS-XE-native:native/interface/GigabitEthernet=2"
 url = f"https://{device['ip']}:{device['port']}/restconf/data/{module}"
 
 requests.packages.urllib3.disable_warnings()
-response = requests.get(url, headers=headers, auth=(device['username'], device['password']), verify=False).json()
-print(response)
+response = requests.get(url, headers=headers, auth=(device['username'], device['password']), verify=False)
+print(response.json())
 print(response.status_code)
 
 if (response.status_code == 204):
