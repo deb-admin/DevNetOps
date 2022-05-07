@@ -3,9 +3,9 @@ import json
 from pprint import pprint
 
 device = {
-   "ip": "ios-xe-mgmt-latest.cisco.com",
-   "username": "***",
-   "password": "***",
+   "ip": "$1",
+   "username": "$2",
+   "password": "$2",
    "port": "9443",
 }
 
