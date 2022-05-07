@@ -2,16 +2,14 @@ import requests
 import json
 
 ip = input("IP: ")
-if not ip.isdigit():
+if ip.isdigit():
     print("请输入正确格式的IP！")
     exit(1)
-username = input("UserName: ")
-password = input("PassWord: ")
 
 device = {
    "ip": f"{ip}",
-   "username": f"{username}",
-   "password": f"{password}",
+   "username": "openlab",
+   "password": "openlab",
    "port": "443",
 }
 
